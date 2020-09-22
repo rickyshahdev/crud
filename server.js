@@ -50,5 +50,5 @@ app.get('/', (req, res) => {
 /////////// Listener /////////////////
 app.listen(PORT, () => {
   console.log('Yes sir!!');
-  // console.log(PORT);
+  console.log(PORT);
 })
