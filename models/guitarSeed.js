@@ -72,12 +72,6 @@ guitarSeed = [
   price: 1999,
   qty: 3
   }
-  // {name: 'Gibson Custom Slash Double Neck SG',
-  // description: 'When Slash bought a \'66 Gibson EDS-1275 double-neck at a small Indiana music store in 1990, he might not have known that it was going to become one of his most iconic and identifiable instruments. He quickly made it a part of his sound, both in the studio and on stage. The Gibson Custom Shop has crafted an exacting replica of his original instrument, skillfully built and aged. Each of the 125 guitars being made is hand-signed and numbered by Slash, and includes a vintage replica hardshell case and Slash concho strap, as well as a Certificate of Authenticity.',
-  // img: '../img/slash.png',
-  // price: 13199,
-  // qty: 1
-  // }
 ]
 
 
