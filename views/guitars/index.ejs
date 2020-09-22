@@ -85,6 +85,9 @@ body{
           <a href="/guitars/<%=guitar[i].id%>">
           <h5><%=guitar[i].name%></h5></a>
           <h5>$<%=guitar[i].price%></h5>
+          <form action="/guitars/<%=guitar[i].id; %>?_method=DELETE" method="POST">
+        <input class="btn btn-danger"type="submit" value="DELETE"/>
+        </form>
           </div>
       <%}%>
     </div>
