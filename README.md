@@ -12,5 +12,5 @@ Notes: nedd to add more instruments,
           work on footer
 
 Unsolved problems: any one can edit and delete the product,
-                   footer does not align in the sign up and log in pages  so I just removed it from there.
+              footer does not align in the sign up and log in pages  so I just removed it from there.
                    some issues with images height adjustment.
