@@ -31,16 +31,20 @@
               <label for="qty">Quantity: </label>
               <input type="number" name="qty" value="<%=guitar.qty || 0 %>" min="0"class="form-control" id="qty"/>
             </div>
-            <div class="row">
-              <div class="col">
-                <input class="btn btn-primary"type="submit" value="Upgrade Guitar">
-              </div>
-              </form>
-              <div class="col">
-                <form action="/guitars/<%=guitar.id;%>?_method=DELETE" method="POST">
-              <input class="btn btn-danger"type="submit" value="DELETE"/>
-              </form>
-              </div>
+            <% if (currentUser.username ==='admin'){%>
+              <div class="row">
+                <div class="col">
+                  <input class="btn btn-primary"type="submit" value="Upgrade Guitar">
+                </div>
+                </form>
+                <div class="col">
+                  <form action="/guitars/<%=guitar.id;%>?_method=DELETE" method="POST">
+                <input class="btn btn-danger"type="submit" value="DELETE"/>
+                </form>
+                </div>
+                <a class="nav-link btn btn-info"href="/guitars/new">Add new Guitar</a>
+            <%}%>
+
           </div>
     </div><br>
   </body>

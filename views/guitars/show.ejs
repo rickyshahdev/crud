@@ -44,9 +44,12 @@
           <button class="btn-lg btn-success" >Buy</button>
         </form>
       </div>
-      <div class="col">
-      <a class="btn btn-primary"href="/guitars/<%=guitars.id%>/edit">Upgrade Guitar</a>
-    </div>
+      <% if (currentUser.username === 'admin'){%>
+        <div class="col">
+        <a class="btn btn-primary"href="/guitars/<%=guitars.id%>/edit">Upgrade Guitar</a>
+      </div>
+      <%}%>
+
   </div>
 </div><br>
 <footer>
