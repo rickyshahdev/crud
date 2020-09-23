@@ -1,9 +1,9 @@
 <div class="jumbotron"style="margin-bottom: 0px; background-image:url('/img/blazing.png'); background-size:cover; background-repeat:no-repeat;">
-<h1 style=" text-align:center; font-size:5vw; margin-top: 1.5%"><a style="color:#A52A2A; text-decoration: none;"href="/guitars">The Guitar World</a></h1>
+<h1 style=" text-align:center; font-size:5vw; margin-top: 1.5%"><a style="color:#808000; text-decoration: none;"href="/guitars">The Guitar World</a></h1>
   </div>
   <nav class="navbar navbar-expand-md navbar-light sticky-top " style="background-color:background-color: #5de6de;
   background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);">
-
+    <a href="/guitars"><img src="/img/giphy.gif" height="40px" width="50px" alt=""></a>
     <a class="nav-link btn btn-info"href="/guitars/new">Add new Guitar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
      <span class="navbar-toggler-icon"></span>
@@ -11,8 +11,9 @@
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
      <ul class="navbar-nav ml-auto">
        <% if (!currentUser) { %>
-         <li><a class="nav-link active"href="/users/new">Sign Up</a></li>
-         <li><a class="nav-link"href="/sessions/new">Log In</a></li>
+
+         <li><a class="nav-link active"href="/users/new">Create an account</a></li>
+         <li><a class="nav-link"href="/sessions/new">Sign In</a></li>
         <% } else { %>
           <li class="nav-link">Welcome <%= currentUser.username %></li>
             <form action="/sessions?_method=DELETE" method="POST">

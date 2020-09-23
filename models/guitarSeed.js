@@ -1,6 +1,5 @@
 guitarSeed = [
-  {
-    name: 'Gibson Les Paul Standard · Electric · 6-string · Unburst',
+  { name: 'Gibson Les Paul Standard · Electric · 6-string · Unburst',
     description: 'Classic designs never die, and the Les Paul only grew in popularity over the years. The 1960s version was adopted by scores of guitarists who went on to become legends in their own right. This Les Paul Standard \'60s features a solid mahogany body with an AA figured maple top, and a slim taper \'60s-style',
     img: '../img/lespaulfull.png',
     price: 1499,

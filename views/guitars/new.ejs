@@ -9,7 +9,7 @@
     </nav>
     <div class="container">
       <h2>Add a new guitar</h2>
-      <form action="/guitars" method="post">
+      <form style="width: 50%; margin: auto;"action="/guitars" method="post">
         <div class="form-group">
           <label for="name">Name: </label>
           <input type="text" name="name"class="form-control"id="name"/>
@@ -32,6 +32,9 @@
         </div>
         <input class="btn btn-primary" type="submit" name="submit" value="Add Guitar">
     </form>
-    </div>
+  </div><br><br>
+    <footer>
+      <%- include('../partials/footer.ejs')%>
+    </footer>
   </body>
 </html>

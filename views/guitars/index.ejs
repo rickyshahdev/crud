@@ -9,7 +9,7 @@ body{
 }
   .img{
   width: 100%;
-  max-width: 400px;
+  /* max-width: 400px; */
   height: auto;
   /* object-fit: cover; */
 
@@ -27,7 +27,7 @@ body{
     <nav>
       <%- include('../partials/nav.ejs')%>
     </nav>
-    <div class="container-fluid">
+
  <!-- carousel -->
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel"data-pause="false">
   <ol class="carousel-indicators">
@@ -41,32 +41,32 @@ body{
       <div class="carousel-item active "data-interval="1000" >
         <img src="../img/wp3634741-jackson-guitars-wallpapers.jpg" height="800rem"class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h2 style="margin-bottom: 10%;">Amazing Guitars with great Deals </h2>
+          <h1 style="margin-bottom: 10%;">Amazing Guitars with great Deals </h1>
         </div>
       </div>
       <div class="carousel-item"data-interval="2000">
         <img src="../img/gyOfcEj-les-paul-wallpaper.jpg"height="800rem"class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h2 style="margin-bottom: 10%;">Amazing Guitars with great Deals</h2>
+          <h1 style="margin-bottom: 10%;">Amazing Guitars with great Deals </h1>
         </div>
       </div>
       <div class="carousel-item" data-interval="2000">
         <img src="../img/7CHUvpx-taylor-guitar-wallpaper.jpg"height="800rem"class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h2 style="margin-bottom: 10%;">Amazing Guitars with great Deals</h2>
+          <h1 style="margin-bottom: 10%;">Amazing Guitars with great Deals </h1>
         </div>
       </div>
       <div class="carousel-item" data-interval="2000">
         <img src="../img/joints-creative-w9IHmVSNBfU-unsplash.jpg"height="800rem"class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h2 style="margin-bottom: 10%;">Amazing Guitars with great Deals</h2>
+          <h1 style="margin-bottom: 10%;">Amazing Guitars with great Deals </h1>
         </div>
       </div>
 
       <div class="carousel-item"data-interval="2000">
         <img src="../img/telecaster.jpg" height="800rem"class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h2 style="margin-bottom: 10%;">Amazing Guitars with great Deals</h2>
+          <h1 style="margin-bottom: 10%;">Amazing Guitars with great Deals </h1>
         </div>
       </div>
     </div>
@@ -80,19 +80,20 @@ body{
     </a>
   </div><br>
  <!-- products -->
+ <div class="container">
   <div class="row">
       <% for (let i = 0; i < guitar.length; i++) {%>
         <div class="col-md-3 product-grid">
           <a href="/guitars/<%=guitar[i].id%>"><img class="img"src="<%=guitar[i].img%>" /></a><br/>
           <a href="/guitars/<%=guitar[i].id%>">
-          <h5><%=guitar[i].name%></h5></a>
+          <h5 style="color:black;"><%=guitar[i].name%></h5></a>
           <h5>$<%=guitar[i].price%></h5>
-          <form action="/guitars/<%=guitar[i].id; %>?_method=DELETE" method="POST">
-        <input class="btn btn-danger"type="submit" value="DELETE"/>
-        </form>
           </div>
       <%}%>
     </div>
-</div>
+  </div>
+  <footer>
+    <%- include('../partials/footer.ejs')%>
+  </footer>
   </body>
 </html>
