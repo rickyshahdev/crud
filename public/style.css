@@ -6,7 +6,12 @@ body{
   background-image: url('./img/fggqevw-hd-guitar-wallpaper.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  color: white;
+  background-position: center center;
+  /* background-attachment: fixed; */
+margin: auto ;
+padding: 0;
+color: white;
+}
+.page-footer{
+  margin-top: 20%;
 }
